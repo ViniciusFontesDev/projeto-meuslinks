@@ -8,9 +8,9 @@
     font-family: "Roboto", sans-serif;
 }
 
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
     display: none;
-}
+} */
 
 :root{
     --cor00: #F5F5F5;
@@ -45,7 +45,7 @@ main{
     overflow: hidden;
 }
 
-img{
+img#perfil{
     object-fit: cover;
     width: 170px;
     height: 170px;
@@ -53,7 +53,7 @@ img{
 }
 
 h1{
-    color: var(--cor00);
+    color: var(--cor02);
 }
 
 h2{
@@ -81,9 +81,44 @@ a{
     font-weight: 400;
 }
 
+.segundo{
+    background-color: rgba(0, 0, 0, 0.571);
+    margin-top: 0px;
+}
+
+.segundo h2{
+    padding-left: 50px;
+    padding-bottom: 10px;
+    color: var(--cor02);
+}
+
+.port{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.port img{
+    object-fit: cover;
+    height: 210px;
+    width: 140px;
+    margin: 8px;
+    border: 1px solid var(--cor04);
+    opacity: .8;
+    transition: opacity .5s, transform .5s, border .5s;
+}
+
+.port img:hover{
+    opacity: 1;
+    transform: scale(1.01);
+    border: none;
+}
+
 footer{
     background-color: rgba(0, 0, 0, 0.571);
     text-align: right;
     color: white;
     padding: 20px;
+    padding-top: 40px;
 }
